@@ -233,7 +233,7 @@ module.exports = {
 				distance: 467.88,
 				//noRetry: true,
 			},
-			1: { 
+			1: {
 				length: 800,
 				noInterrupt: [2, 10, 32, 40, 41]
 			}
@@ -1216,7 +1216,8 @@ module.exports = {
 		},
 		8: { // Overhand Strike
 			"*": {
-				distance: 169.5,
+				distance: 171.14,
+				specialLock: 490,
 				race: {
 					3: { distance: 152.2 },
 					4: { distance: 145 },
@@ -1230,11 +1231,12 @@ module.exports = {
 			0: {
 				length: 3375.7,
 				interruptAllWithAbnormal: { 301604: 8 },
-				noInterrupt: ["1-0", "1-1", "1-2", 4, 6, 8, 10, "14-0", "14-1", 17, 21, 23, 25, 26, 28],
+				noInterrupt: ["1-0", "1-1", "1-2", 4, 6, 8, 10, "14-0", "14-1", 17, 18, 21, 23, 25, 26, 28],
 				abnormals: {
 					300801: { skill: 250100 },
 					300805: { skill: 250100 },
-					301604: { chain: 30 } // todo:
+					23220: { skill: 250100 }, // hack 
+					301604: { chain: 30 }
 				},
 				chains: {
 					1: 30,
@@ -1255,7 +1257,8 @@ module.exports = {
 				abnormals: {
 					300801: { skill: 250130 },
 					300805: { skill: 250130 }
-				}
+				},
+				consumeAbnormal: 301604
 			}
 		},
 		9: { // Leaping Strike
@@ -1792,7 +1795,7 @@ module.exports = {
 				race: {
 					1: { distance: 79.19432 },
 					2: { distance: 82.33742 },
-					3: { 
+					3: {
 						length: 1384.54,
 						distance: 71.33583
 					},
@@ -1959,7 +1962,10 @@ module.exports = {
 			0: true,
 			// 0 -> 10, 0 + 401705 -> 20 (Might not be needed to be handled) 
 			10: true,
-			20: { length: 384.61 }
+			20: {
+				length: 384.61,
+				fixedSpeed: false
+			}
 		},
 		18: { // Lethal Strike
 			"*": {
@@ -2488,7 +2494,7 @@ module.exports = {
 			10: {
 				type: "lockonCast",
 				length: 1501,
-				race: {	7: { glyphs: false}},
+				race: { 7: { glyphs: false } },
 				glyphs: {
 					25001: { speed: 0.3 },
 					25096: { speed: 0.4 }
