@@ -1,8 +1,10 @@
 {
-    "disableAutoUpdate": false,
+    "disableAutoUpdate": true,
     "options": {
-        "niceName": "SP"
+        "niceName": "PSP",
+        "settingsVersion": 4,
+        "settingsFile": "./settings.json",
+        "settingsMigrator": "./migration.js"
     },
-    "servers": ["https://raw.githubusercontent.com/SaltyMonkey/skill-prediction/master/"],
-    "supportUrl": "https://github.com/SaltyMonkey/skill-prediction/issues"
-}
+    "servers": ["https://raw.githubusercontent.com/SaltyMonkey/skill-prediction/master/"]
+} 
