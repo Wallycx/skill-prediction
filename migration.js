@@ -1,7 +1,6 @@
 "use strict"
 
 const DefaultSettings = {
-    version: 4,
     skills: {
         jitterCompensation:		true,
         retryCount:				2,		//	Number of times to retry each skill (0 = disabled). Recommended 1-3.
