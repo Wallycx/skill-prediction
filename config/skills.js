@@ -299,7 +299,7 @@ module.exports = {
 		},
 		3: { // Onslaught
 			'*': {
-				noInterrupt: ['1-0', '1-1', 2, 3, 8, 10, 13, 15, 21, 25, 26],
+				noInterrupt: ['1-0', '1-1', 2, 3, 4, 9, 8, 10, 13, 15, 21, 23, 24, 25, 26],
 				abnormals: {
 					22060: { speed: 1.25 }
 				}
@@ -314,7 +314,7 @@ module.exports = {
 			30: true
 		},
 		4: { // Challenging Shout
-			'*': { noInterrupt: [9, 12, 23, 24, 26] },
+			'*': { noInterrupt: [4, 9, 12, 23, 24, 26] },
 			0: {
 				chains: {
 					1: 30,
@@ -349,7 +349,7 @@ module.exports = {
 			0: true
 		},
 		10: { // Debilitate
-			'*': { noInterrupt: [2, 3, 5, 10, 13, 21, 25, 26] },
+			'*': { noInterrupt: [2, 3, 4, 5, 9, 10, 13, 21, 23, 24, 25, 26] },
 			0: {
 				chains: {
 					1: 30,
@@ -366,7 +366,7 @@ module.exports = {
 		},
 		13: { // Spring Attack
 			0: {
-				noInterrupt: ['1-0', '1-1', 2, 3, 13, 15, 25, 26],
+				noInterrupt: ['1-0', '1-1', 2, 3, 4, 9, 13, 15, 23, 24, 25, 26],
 				chains: {
 					1: 30,
 					5: 30,
@@ -426,7 +426,7 @@ module.exports = {
 		},
 		25: { // Wallop
 			0: {
-				noInterrupt: [1, 2, 3, 5, 25, 26],
+				noInterrupt: [1, 2, 3, 4, 5, 9, 23, 24, 25, 26],
 				chains: {
 					8: 30,
 					10: 30,
@@ -1237,7 +1237,11 @@ module.exports = {
 		6: { // Backstep
 			0: {
 				moveDir: 1,
-				forceClip: true
+				forceClip: true,
+				stamina: 180,
+				instantStamina: true,
+				noInterrupt: [6],
+				noRetry: true
 			}
 		},
 		7: { // Feign Death
@@ -1994,16 +1998,16 @@ module.exports = {
 			},
 			0: {
 				chains: {
-					1: null,
-					3: null,
-					4: null,
-					5: null,
-					6: null,
-					8: null,
-					9: null,
-					10: null,
-					11: null,
-					12: null
+					1: 30,
+					3: 30,
+					4: 30,
+					5: 30,
+					6: 30,
+					8: 30,
+					9: 30,
+					10: 30,
+					11: 30,
+					12: 30
 				},
 				inPlace: {
 					movement: [
@@ -2020,6 +2024,7 @@ module.exports = {
 				}
 			},
 			30: {
+				connectSkillArrow: true,
 				inPlace: {
 					movement: [
 						[{
@@ -2031,7 +2036,8 @@ module.exports = {
 						[]
 					],
 					distance: [0, 0]
-				}
+				},
+				noRetry: true
 			},
 			31: {
 				inPlace: {
@@ -2049,16 +2055,16 @@ module.exports = {
 			},
 			40: {
 				chains: {
-					1: null,
-					3: null,
-					4: null,
-					5: null,
-					6: null,
-					8: null,
-					9: null,
-					10: null,
-					11: null,
-					12: null
+					1: 60,
+					3: 60,
+					4: 60,
+					5: 60,
+					6: 60,
+					8: 60,
+					9: 60,
+					10: 60,
+					11: 60,
+					12: 60
 				},
 				inPlace: {
 					movement: [
@@ -2075,6 +2081,7 @@ module.exports = {
 				}
 			},
 			60: {
+				connectSkillArrow: true,
 				inPlace: {
 					movement: [
 						[{
@@ -2086,7 +2093,8 @@ module.exports = {
 						[]
 					],
 					distance: [0, 0]
-				}
+				},
+				noRetry: true
 			},
 			61: {
 				inPlace: {
@@ -2653,43 +2661,43 @@ module.exports = {
 			1: {
 				projectiles: [20],
 				categoryChains: {
-					91002: null,
-					91003: null,
-					91004: null,
-					91005: null,
-					'91007,10001': null,
-					91009: null,
-					91010: null,
-					91011: null,
-					91013: null,
-					91015: null,
-					91018: null,
-					91019: null,
-					91040: null,
-					91041: null,
-					91043: null,
-					91047: null
+					91002: 30,
+					91003: 30,
+					91004: 30,
+					91005: 30,
+					'91007,10001': 30,
+					91009: 30,
+					91010: 30,
+					91011: 30,
+					91013: 30,
+					91015: 30,
+					91018: 30,
+					91019: 30,
+					91040: 30,
+					91041: 30,
+					91043: 30,
+					91047: 30
 				}
 			},
 			2: {
 				projectiles: [20],
 				categoryChains: {
-					91002: null,
-					91003: null,
-					91004: null,
-					91005: null,
-					'91007,10001': null,
-					91009: null,
-					91010: null,
-					91011: null,
-					91013: null,
-					91015: null,
-					91018: null,
-					91019: null,
-					91040: null,
-					91041: null,
-					91043: null,
-					91047: null
+					91002: 30,
+					91003: 30,
+					91004: 30,
+					91005: 30,
+					'91007,10001': 30,
+					91009: 30,
+					91010: 30,
+					91011: 30,
+					91013: 30,
+					91015: 30,
+					91018: 30,
+					91019: 30,
+					91040: 30,
+					91041: 30,
+					91043: 30,
+					91047: 30
 				}
 			},
 			20: {
@@ -2728,7 +2736,11 @@ module.exports = {
 				type: 'projectile',
 				length: 1000
 			},*/
-			30: { projectiles: [20] }
+			30: {
+				connectSkillArrow: true,
+				projectiles: [20],
+				noRetry: true
+			}
 		},
 		11: { // Rocket Jump
 			'*': {
@@ -2786,45 +2798,48 @@ module.exports = {
 			},
 			1: {
 				categoryChains: {
-					91002: null,
-					91003: null,
-					91004: null,
-					91005: null,
-					'91007,10001': null,
-					91009: null,
-					91010: null,
-					91011: null,
-					91013: null,
-					91015: null,
-					91018: null,
-					91019: null,
-					91040: null,
-					91041: null,
-					91043: null,
-					91047: null
+					91002: 30,
+					91003: 30,
+					91004: 30,
+					91005: 30,
+					'91007,10001': 30,
+					91009: 30,
+					91010: 30,
+					91011: 30,
+					91013: 30,
+					91015: 30,
+					91018: 30,
+					91019: 30,
+					91040: 30,
+					91041: 30,
+					91043: 30,
+					91047: 30
 				}
 			},
 			2: {
 				categoryChains: {
-					91002: null,
-					91003: null,
-					91004: null,
-					91005: null,
-					'91007,10001': null,
-					91009: null,
-					91010: null,
-					91011: null,
-					91013: null,
-					91015: null,
-					91018: null,
-					91019: null,
-					91040: null,
-					91041: null,
-					91043: null,
-					91047: null
+					91002: 30,
+					91003: 30,
+					91004: 30,
+					91005: 30,
+					'91007,10001': 30,
+					91009: 30,
+					91010: 30,
+					91011: 30,
+					91013: 30,
+					91015: 30,
+					91018: 30,
+					91019: 30,
+					91040: 30,
+					91041: 30,
+					91043: 30,
+					91047: 30
 				}
 			},
-			30: true
+			30: {
+				connectSkillArrow: true,
+				noRetry: true
+			}
 		},
 		15: { // Replenishment
 			'*': {
@@ -2883,43 +2898,43 @@ module.exports = {
 			1: {
 				projectiles: [20],
 				categoryChains: {
-					91002: null,
-					91003: null,
-					91004: null,
-					91005: null,
-					'91007,10001': null,
-					91009: null,
-					91010: null,
-					91011: null,
-					91013: null,
-					91015: null,
-					91018: null,
-					91019: null,
-					91040: null,
-					91041: null,
-					91043: null,
-					91047: null
+					91002: 30,
+					91003: 30,
+					91004: 30,
+					91005: 30,
+					'91007,10001': 30,
+					91009: 30,
+					91010: 30,
+					91011: 30,
+					91013: 30,
+					91015: 30,
+					91018: 30,
+					91019: 30,
+					91040: 30,
+					91041: 30,
+					91043: 30,
+					91047: 30
 				}
 			},
 			2: {
 				projectiles: [20],
 				categoryChains: {
-					91002: null,
-					91003: null,
-					91004: null,
-					91005: null,
-					'91007,10001': null,
-					91009: null,
-					91010: null,
-					91011: null,
-					91013: null,
-					91015: null,
-					91018: null,
-					91019: null,
-					91040: null,
-					91041: null,
-					91043: null,
-					91047: null
+					91002: 30,
+					91003: 30,
+					91004: 30,
+					91005: 30,
+					'91007,10001': 30,
+					91009: 30,
+					91010: 30,
+					91011: 30,
+					91013: 30,
+					91015: 30,
+					91018: 30,
+					91019: 30,
+					91040: 30,
+					91041: 30,
+					91043: 30,
+					91047: 30
 				}
 			},
 			20: {
@@ -2933,7 +2948,11 @@ module.exports = {
 				type: 'projectile',
 				length: 5000
 			},*/
-			30: { projectiles: [20] }
+			30: {
+				connectSkillArrow: true,
+				projectiles: [20],
+				noRetry: true
+			}
 		},
 		20: { // Retaliate
 			0: { noRetry: true }
@@ -3026,47 +3045,53 @@ module.exports = {
 			},
 			1: {
 				categoryChains: {
-					91002: null,
-					91003: null,
-					91004: null,
-					91005: null,
-					'91007,10001': null,
-					91009: null,
-					91010: null,
-					91011: null,
-					91013: null,
-					91015: null,
-					91018: null,
-					91019: null,
-					91040: null,
-					91041: null,
-					91043: null,
-					91047: null
+					91002: 30,
+					91003: 30,
+					91004: 30,
+					91005: 30,
+					'91007,10001': 30,
+					91009: 30,
+					91010: 30,
+					91011: 30,
+					91013: 30,
+					91015: 30,
+					91018: 30,
+					91019: 30,
+					91040: 30,
+					91041: 30,
+					91043: 30,
+					91047: 30
 				}
 			},
 			3: {
 				categoryChains: {
-					91002: null,
-					91003: null,
-					91004: null,
-					91005: null,
-					'91007,10001': null,
-					91009: null,
-					91010: null,
-					91011: null,
-					91013: null,
-					91015: null,
-					91018: null,
-					91019: null,
-					91040: null,
-					91041: null,
-					91043: null,
-					91047: null
+					91002: 50,
+					91003: 50,
+					91004: 50,
+					91005: 50,
+					'91007,10001': 50,
+					91009: 50,
+					91010: 50,
+					91011: 50,
+					91013: 50,
+					91015: 50,
+					91018: 50,
+					91019: 50,
+					91040: 50,
+					91041: 50,
+					91043: 50,
+					91047: 50
 				}
 			},
-			30: true,
+			30: {
+				connectSkillArrow: true,
+				noRetry: true
+			},
 			31: true,
-			50: true,
+			50: {
+				connectSkillArrow: true,
+				noRetry: true
+			},
 			51: true,
 		},
 		44: { // Balder's Vengeance (Modular Weapon System)
@@ -3077,25 +3102,28 @@ module.exports = {
 			},
 			1: {
 				categoryChains: {
-					91002: null,
-					91003: null,
-					91004: null,
-					91005: null,
-					'91007,10001': null,
-					91009: null,
-					91010: null,
-					91011: null,
-					91013: null,
-					91015: null,
-					91018: null,
-					91019: null,
-					91040: null,
-					91041: null,
-					91043: null,
-					91047: null
+					91002: 30,
+					91003: 30,
+					91004: 30,
+					91005: 30,
+					'91007,10001': 30,
+					91009: 30,
+					91010: 30,
+					91011: 30,
+					91013: 30,
+					91015: 30,
+					91018: 30,
+					91019: 30,
+					91040: 30,
+					91041: 30,
+					91043: 30,
+					91047: 30
 				}
 			},
-			30: true
+			30: {
+				connectSkillArrow: true,
+				noRetry: true
+			}
 		},
 		47: { // Obliteration
 			'*': {
@@ -3427,10 +3455,13 @@ module.exports = {
 			0: {
 				categoryChains: {
 					911: 40,
-					'9999,900': null
+					'9999,900': 30
 				}
 			},
-			30: { userChain: 0 }, // This skill is bugged and always triggers serverside anti-cheat
+			30: {
+				connectSkillArrow: true,
+				noRetry: true
+			},
 			40: true
 		},
 		4: { // Jagged Path
@@ -3449,8 +3480,11 @@ module.exports = {
 				forceClip: true,
 				noRetry: true
 			},
-			0: { categoryChains: { 900: null } },
-			30: true
+			0: { categoryChains: { 900: 30 } },
+			30: {
+				connectSkillArrow: true,
+				noRetry: true
+			}
 		},
 		6: { // One Thousand Cuts
 			'*': { hasChains: true },
@@ -3481,8 +3515,11 @@ module.exports = {
 			52: true
 		},
 		9: { // Smoke Bomb
-			0: { categoryChains: { 900: null } },
-			30: true
+			0: { categoryChains: { 900: 30 } },
+			30: {
+				connectSkillArrow: true,
+				noRetry: true
+			}
 		},
 		10: { // Retaliate
 			0: { noRetry: true }
@@ -3563,14 +3600,26 @@ module.exports = {
 				hasChains: true,
 				noRetry: true
 			},
-			0: { categoryChains: { 93003: null } },
-			11: { categoryChains: { 93003: null } },
-			12: { categoryChains: { 93003: null } },
-			13: { categoryChains: { 93003: null } },
-			15: true,
-			16: true,
-			17: true,
-			18: true,
+			0: { categoryChains: { 93003: 15 } },
+			11: { categoryChains: { 93003: 17 } },
+			12: { categoryChains: { 93003: 16 } },
+			13: { categoryChains: { 93003: 18 } },
+			15: {
+				connectSkillArrow: true,
+				noRetry: true
+			},
+			16: {
+				connectSkillArrow: true,
+				noRetry: true
+			},
+			17: {
+				connectSkillArrow: true,
+				noRetry: true
+			},
+			18: {
+				connectSkillArrow: true,
+				noRetry: true
+			},
 			50: true,
 			51: true
 		},
@@ -3584,9 +3633,20 @@ module.exports = {
 			},
 			20: true,
 			30: true,
-			40: { categoryChains: { 900: null } },
-			50: true,
-			60: true
+			40: {
+				categoryChains: {
+					93019: 60,
+					'9999,900': 50
+				}
+			},
+			50: {
+				connectSkillArrow: true,
+				noRetry: true
+			},
+			60: {
+				connectSkillArrow: true,
+				noRetry: true
+			}
 		},
 		23: { // Inner Harmony
 			'*': { hasChains: true },
@@ -3699,8 +3759,11 @@ module.exports = {
 				hasChains: true,
 				noRetry: true
 			},
-			0: { categoryChains: { 750: null } },
-			30: true
+			0: { categoryChains: { 750: 30 } },
+			30: {
+				connectSkillArrow: true,
+				noRetry: true
+			}
 		},
 		11: { // Shining Crescent
 			'*': { hasChains: true },
