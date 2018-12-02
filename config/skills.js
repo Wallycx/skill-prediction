@@ -426,7 +426,7 @@ module.exports = {
 		},
 		25: { // Wallop
 			0: {
-				noInterrupt: [1, 2, 3, 5, 25, 26],
+				noInterrupt: [1, 2, 3, 5, 9, 23, 24, 25, 26],
 				chains: {
 					8: 30,
 					10: 30,
@@ -1237,7 +1237,11 @@ module.exports = {
 		6: { // Backstep
 			0: {
 				moveDir: 1,
-				forceClip: true
+				forceClip: true,
+				stamina: 180,
+				instantStamina: true,
+				noInterrupt: [6],
+				noRetry: true
 			}
 		},
 		7: { // Feign Death
