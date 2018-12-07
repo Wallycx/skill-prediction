@@ -41,7 +41,7 @@ module.exports = {
 		},
 		4: { // Rain of Blows
 			0: {
-				noInterrupt: [1, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13, 16, 17, 19, 22, 28, 29, 34, 36, 37, 39, 41, 42],
+				noInterrupt: [1, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13, 16, 17, 19, 22, 23, 28, 29, 30, 31, 34, 35, 36, 37, 38, 39, 41, 42],
 				categoryChains: { 550: 30 }
 			},
 			30: true
@@ -61,7 +61,7 @@ module.exports = {
 			50: true
 		},
 		10: { // Death From Above
-			0: true
+			0: { noInterrupt: [10] }
 		},
 		11: { // Poison Blade
 			0: true
@@ -73,6 +73,7 @@ module.exports = {
 			0: { noRetry: true }
 		},
 		16: { // Charging Slash
+			'*': { noInterrupt: [40] },
 			0: {
 				fixedSpeed: true,
 				length: 1100,
@@ -144,7 +145,7 @@ module.exports = {
 		29: { // Blade Draw
 			'*': { hasChains: true },
 			0: {
-				noInterrupt: [1, 2, 3, 4, 8, 9, 10, 11, 12, 13, '16-0', 18, '19-0', 21, 22, 27, 29, 34, 36, 37, 41, 42],
+				noInterrupt: [1, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13, '16-0', 18, '19-0', 21, 22, 23, 27, 29, 30, 34, 35, 36, 37, 38, 41, 42],
 				interruptibleWithAbnormal: { 102010: 3 },
 				categoryChains: {
 					1032: 30,
@@ -156,7 +157,7 @@ module.exports = {
 		30: { // Scythe
 			'*': { hasChains: true },
 			0: {
-				noInterrupt: [1, 3, 5, 8, 9, 10, 13, 16, 17, 18, 19, 21, 22, 27, 28, 30, 31, 34, 35, 38, 39, 41, 42],
+				noInterrupt: [1, 3, 5, 8, 9, 10, 13, 16, 17, 18, 19, 21, 22, 23, 27, 28, 30, 31, 34, 35, 38, 39, 41, 42],
 				categoryChains: {
 					1002: 30,
 					1004: 30,
@@ -170,7 +171,7 @@ module.exports = {
 		},
 		31: { // Reaping Slash
 			'*': {
-				noInterrupt: [1, 2, 3, 8, 9, 10, 11, 12, 13, 16, 17, 19, 21, 22, 27, 28, 29, 34, 35, 37, 39, 41, 42],
+				noInterrupt: [1, 2, 3, 5, 8, 9, 10, 11, 12, 13, 16, 17, 19, 21, 22, 23, 27, 28, 29, 30, 33, 34, 35, 37, 38, 39, 41, 42],
 				hasChains: true
 			},
 			0: { categoryChains: { 550: 30 } },
@@ -184,7 +185,7 @@ module.exports = {
 			}
 		},
 		34: { // Binding Sword
-			0: true
+			0: { noInterrupt: [1, 2, 3, 4, 5, 10, 11, 12, 13, 16, 17, 18, 19, 20, 21, 22, 23, 28, 29, 30, 31, 33, 35, 36, 37, 38, 39, 41, 42] }
 		},
 		35: { // Infuriate
 			0: { requiredBuff: [100200, 100201] }
@@ -267,7 +268,7 @@ module.exports = {
 		},
 		42: { // Blade Frenzy
 			'*': {
-				noInterrupt: ['41-0', '41-30', 42],
+				noInterrupt: [1, 3, 4, 5, 10, 11, 12, 13, 16, 17, 18, 19, 21, 22, 23, 28, 29, 31, 33, 34, 35, 36, 37, 39, '41-0', '41-30', 42],
 				hasChains: true
 			},
 			0: {
