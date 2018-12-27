@@ -663,7 +663,7 @@ module.exports = {
 		},
 		27: { // Savage Strike
 			'*': {
-				noInterrupt: [27],
+				noInterrupt: ['27-31'],
 				hasChains: true,
 				noRetry: true
 			},
@@ -3614,8 +3614,7 @@ module.exports = {
 		21: { // Boomerang Shuriken
 			'*': {
 				hasChains: true,
-				noRetry: true,
-				noInterrupt: [21]
+				noRetry: true
 			},
 			0: { categoryChains: { 93003: 15 } },
 			11: { categoryChains: { 93003: 17 } },
