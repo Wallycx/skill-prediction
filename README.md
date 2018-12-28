@@ -1,3 +1,10 @@
+### This is not SaltyMonkey's SP
+This is just a fork of Pinkie Pie's original SP, ported over to be compatible with Caali's tera-proxy.  
+If anything bugs, doesn't work or just sucks, please report the problem directly to Pinkie Pie.  
+  
+That being said, here is the rest of the readme:  
+  
+  
 :heart: [![Donate](https://img.shields.io/badge/Donate-PayPal-ff69b4.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=5MTKARBK2CNG8&lc=US&item_name=Pinkie%27s%20TERA%20Mods&currency_code=USD) :heart:
 
 ## Skill Prediction
