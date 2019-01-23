@@ -483,24 +483,28 @@ module.exports = {
 			3: true
 		},
 		2: { // Knockdown Strike
-			'*': {
-				noInterrupt: [1, 2, 3, 4, 6, 8, 10, 12, 13, 15, 16, 17, 24, 25],
-				abnormals: {
-					23070: { speed: 1.25 }
-				}
-			},
+			'*': { abnormals: { 23070: { speed: 1.25 } } },
 			1: true,
-			2: { chains: { 14: 30 } },
+			2: { chains: { 14: 30, 27: 30 } },
 			30: true
 		},
 		3: { // Whirlwind
-			'*': {
-					noInterrupt: [1, 2, 3, 4, 6, 8, 10, 12, 13, 14, 15, 16, 17, 24, 25],
-					abnormals: {
-						23080: { speed: 1.25 }
-					}
-				},
-			0: { categoryChains: { 3027: 30 } },
+			'*': { abnormals: { 23080: { speed: 1.25 } } },
+			0: true,
+			1: true,
+			2: { 
+				chains: {
+					2: 30,
+					4: 30,
+					8: 30,
+					12: 30,
+					23: 30,
+					24: 30,
+					26: 30,
+					27: 30,
+					28: 30
+				}
+			},
 			30: true
 		},
 		4: { // Evasive Roll
@@ -520,6 +524,7 @@ module.exports = {
 				onlyTarget: true
 			}
 		},
+		/*
 		8: { // Overhand Strike
 			'*': { hasChains: true },
 			0: {
@@ -540,6 +545,7 @@ module.exports = {
 			},
 			30: true
 		},
+		*/
 		9: { // Leaping Strike
 			0: true
 		},
@@ -548,13 +554,27 @@ module.exports = {
 		},
 		12: { // Heart Thrust
 			'*': {
-				noInterrupt: [1, 2, 3, 4, 6, 8, 10, 12, 13, 14, 15, 16, 17, 24, 25],
 				abnormals: {
 					23060: { speed: 1.25 },
 					23061: { speed: 1.35 }
 				}
 			},
-			0: { categoryChains: { 3027: 30 } },
+			0: true,
+			1: true,
+			2: { 
+				chains: {
+					2: 30,
+					3: 30,
+					4: 30,
+					8: 30,
+					12: 30,
+					23: 30,
+					24: 30,
+					26: 30,
+					27: 30,
+					28: 30
+				}
+			},
 			30: true
 		},
 		13: { // Stunning Backhand
@@ -562,7 +582,7 @@ module.exports = {
 		},
 		14: { // Distant Blade
 			'*': {
-				triggerAbnormal: { 23220: 3000 },
+				triggerAbnormal: { 23220: 2000 },
 				consumeAbnormalEnd: 23220
 			},
 			0: true,
@@ -593,7 +613,11 @@ module.exports = {
 			0: { fixedSpeed: true }
 		},
 		20: { // In Cold Blood
-			0: { fixedSpeed: true }
+			0: { 
+				fixedSpeed: true,
+				triggerAbnormal: { 23220: 2000 },
+				consumeAbnormalEnd: 23220
+			 }
 		},
 		23: { // Measured Slice
 			'*': { hasChains: true },
@@ -623,25 +647,6 @@ module.exports = {
 					13: 30,
 					15: 30,
 					25: 30
-				}
-			},
-			30: true
-		},
-		25: { // Ultimate Overhand Strike
-			'*': { hasChains: true },
-			0: {
-				chains: {
-					1: 30,
-					2: 30,
-					3: 30,
-					9: 30,
-					12: 30,
-					13: 30,
-					14: 30,
-					15: 30,
-					16: 30,
-					24: 30,
-					27: 30 // Workaround - TODO: Emulate abnormal 301604
 				}
 			},
 			30: true
