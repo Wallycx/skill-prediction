@@ -3717,7 +3717,7 @@ module.exports = {
 		4: { // Charge
 			0: {
 				fixedSpeed: true,
-				length: 550,
+				length: 1100,
 				distance: 436,
 				noInterrupt: ['4-0']
 			},
