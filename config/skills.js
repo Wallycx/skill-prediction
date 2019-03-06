@@ -33,7 +33,12 @@ module.exports = {
 			0: {
 				forceClip: true,
 				stamina: 500,
-				instantStamina: true
+				instantStamina: true,
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
 			}
 		},
 		3: { // Torrent of Blows
@@ -109,7 +114,12 @@ module.exports = {
 		22: { // Backstab
 			0: {
 				distance: 0,
-				onlyTarget: true
+				onlyTarget: true,
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
 			}
 		},
 		23: { // Spinning Counter
@@ -448,7 +458,12 @@ module.exports = {
 				forceClip: true,
 				stamina: 800,
 				instantStamina: true,
-				noInterrupt: [26]
+				noInterrupt: [26],
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
 			}
 		},
 		27: { // Rallying Cry
@@ -510,18 +525,35 @@ module.exports = {
 		4: { // Evasive Roll
 			'*': {
 				forceClip: true,
-				hasChains: true
+				hasChains: true,
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
 			},
 			0: { abnormalChains: { 40300: 30 } },
 			30: true
 		},
 		5: { // Dash
-			0: { fixedSpeed: true }
+			0: { 
+				fixedSpeed: true,
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
+			}
 		},
 		6: { // Backstab
 			0: {
 				distance: 0,
-				onlyTarget: true
+				onlyTarget: true,
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
 			}
 		},
 		/*
@@ -592,7 +624,12 @@ module.exports = {
 		15: { // Startling Kick
 			0: {
 				moveDir: 1,
-				forceClip: true
+				forceClip: true,
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
 			}
 		},
 		16: { // Fury Strike
@@ -602,7 +639,12 @@ module.exports = {
 			0: {
 				fixedSpeed: true,
 				length: 1000,
-				distance: 413
+				distance: 413,
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
 			}
 		},
 		18: { // Overpower
@@ -758,7 +800,14 @@ module.exports = {
 			31: true
 		},
 		5: { // Dash
-			0: { fixedSpeed: true }
+			0: { 
+				fixedSpeed: true,
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
+			}
 		},
 		6: { // Sweeping Strike
 			'*': { noRetry: true },
@@ -855,7 +904,13 @@ module.exports = {
 			0: { fixedSpeed: true }
 		},
 		24: { // Evasive Smash
-			0: true,
+			0: {
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
+			},
 			5: true,
 			10: true,
 			11: true,
@@ -912,7 +967,12 @@ module.exports = {
 		29: { // Evasive Roll
 			0: {
 				noInterrupt: [29],
-				forceClip: true
+				forceClip: true,
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
 			}
 		},
 		30: { // Axe Counter
@@ -1042,7 +1102,12 @@ module.exports = {
 		7: { // Backstep
 			0: {
 				moveDir: 1,
-				forceClip: true
+				forceClip: true,
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
 			}
 		},
 		8: { // Flame Pillar
@@ -1150,7 +1215,12 @@ module.exports = {
 			0: {
 				noInterrupt: [26],
 				cooldownEnd: 300,
-				noRetry: true
+				noRetry: true,
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
 			}
 		},
 		27: { // Hailstorm
@@ -1265,7 +1335,12 @@ module.exports = {
 		7: { // Feign Death
 			0: {
 				fixedSpeed: true,
-				moveDir: 1
+				moveDir: 1,
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
 			}
 		},
 		8: { // Rapid Fire
@@ -1346,7 +1421,12 @@ module.exports = {
 			0: {
 				fixedSpeed: true,
 				length: 1000,
-				distance: 413
+				distance: 413,
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
 			}
 		},
 		34: { // Wind Walk
@@ -1503,7 +1583,12 @@ module.exports = {
 		26: { // Fiery Escape
 			0: {
 				moveDir: 1,
-				forceClip: true
+				forceClip: true,
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
 			}
 		},
 		27: { // Final Reprisal
@@ -1599,7 +1684,12 @@ module.exports = {
 		38: { // Backstep
 			0: {
 				moveDir: 1,
-				forceClip: true
+				forceClip: true,
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
 			}
 		},
 		39: { // Grace of Resurrection
@@ -1718,7 +1808,12 @@ module.exports = {
 			0: {
 				noInterrupt: [17],
 				cooldownEnd: 300,
-				noRetry: true
+				noRetry: true,
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
 			}
 		},
 		18: { // Arun's Vitae
@@ -2236,7 +2331,7 @@ module.exports = {
 			41: true
 		},
 		9: { // Smite
-			0: {
+			"*": {
 				noInterrupt: [19],
 				distance: 168,
 				inPlace: {
@@ -2248,8 +2343,15 @@ module.exports = {
 					}],
 					distance: 0
 				},
-				noInterrupt: [1, 3, 4, 5, 6, 8, 9, 10, 11, 12, 20]
-			}
+				noInterrupt: [1, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 18, 19, 20, 21, 23, 40],
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
+			},
+			0: true,
+			30: true
 		},
 		10: { // Pendulum Strike
 			'*': {
@@ -2377,7 +2479,12 @@ module.exports = {
 		40: { // Shadow Step
 			'*': {
 				forceClip: true,
-				abnormalChains: { 10151000: 30 }
+				abnormalChains: { 10151000: 30 },
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
 			},
 			0: true,
 			30: true
@@ -2763,7 +2870,12 @@ module.exports = {
 		11: { // Rocket Jump
 			'*': {
 				noInterrupt: [15],
-				hasChains: true
+				hasChains: true,
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
 			},
 			1: {
 				categoryChains: {
@@ -2983,7 +3095,12 @@ module.exports = {
 					10152012: 3100,
 					10152354: 4000
 				},
-				forceClip: true
+				forceClip: true,
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
 			},
 			1: { abnormalChains: { 10152354: 31 } },
 			2: { abnormalChains: { 10152354: 32 } },
@@ -3298,7 +3415,12 @@ module.exports = {
 		5: { // Bullrush
 			0: {
 				fixedSpeed: true,
-				noRetry: true
+				noRetry: true,
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
 			}
 		},
 		6: { // Haymaker
@@ -3427,10 +3549,16 @@ module.exports = {
 				fixedSpeed: true,
 				forceClip: true,
 				abnormalChains: { 10153150: 30 },
-				noRetry: true
+				noRetry: true,
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
 			},
 			0: true,
-			30: true
+			30: true,
+			31: true
 		}
 	},
 	11: { // Ninja
@@ -3463,7 +3591,12 @@ module.exports = {
 			'*': {
 				fixedSpeed: true,
 				forceClip: true,
-				abnormalChains: { 10154010: 30 }
+				abnormalChains: { 10154010: 30 },
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
 			},
 			0: true,
 			30: true
@@ -3486,8 +3619,14 @@ module.exports = {
 			1: {
 				fixedSpeed: true,
 				length: 665,
-				distance: 469
+				distance: 469,
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
 			},
+			2: { fixedSpeed: true },
 			10: true,
 			11: true
 		},
@@ -3496,7 +3635,12 @@ module.exports = {
 				moveDir: 1,
 				noInterrupt: [5],
 				forceClip: true,
-				noRetry: true
+				noRetry: true,
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
 			},
 			0: { categoryChains: { 900: 30 } },
 			30: {
@@ -3505,7 +3649,14 @@ module.exports = {
 			}
 		},
 		6: { // One Thousand Cuts
-			'*': { hasChains: true },
+			'*': { 
+				hasChains: true,
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }	
+			},
 			0: { categoryChains: { 900: 30 } },
 			1: {
 				fixedSpeed: true,
@@ -3516,7 +3667,14 @@ module.exports = {
 			30: true
 		},
 		7: { // Decoy Jutsu
-			0: { onlyTarget: true }
+			0: { 
+				onlyTarget: true,
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
+			}
 		},
 		8: { // Fire Avalanche
 			'*': {
@@ -3809,7 +3967,12 @@ module.exports = {
 		14: { // Evasion
 			'*': {
 				fixedSpeed: true,
-				forceClip: true
+				forceClip: true,
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
 			},
 			0: true,
 			1: true
@@ -3841,7 +4004,12 @@ module.exports = {
 		20: { // Backstab
 			0: {
 				distance: 0,
-				onlyTarget: true
+				onlyTarget: true,
+				abnormals: {
+					501323: { disableSkill: true }, 
+					400801: { disableSkill: true },
+					301900: { disableSkill: true } 
+		    }
 			}
 		},
 		21: { // Dark Herald
