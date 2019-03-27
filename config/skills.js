@@ -472,6 +472,7 @@ module.exports = {
 		28: { // Super Leap
 			0: {
 				noInterrupt: [1, 3, 4, 5, 9, 10, 12, 13, 18, 21, 23, 24, 26, 28],
+				forceClip: true,
 				chains: {
 					15: 1,
 					25: 1
