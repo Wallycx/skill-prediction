@@ -1820,13 +1820,16 @@ module.exports = {
 		18: { // Arun's Vitae
 			0: {
 				chargeLevels: [10, 10],
-				autoRelease: 0,
+				noInterrupt: [18],
+				//autoRelease: 0,
 				abnormals: {
 					27070: { chargeSpeed: 0.25 },
 					27080: { chargeSpeed: 0.25 }
 				}
 			},
-			10: { noRetry: true }
+			10: { noRetry: true,
+				noInterrupt: ["18-10"]
+			}
 		},
 		21: { // Retaliate
 			0: { noRetry: true }
@@ -1834,7 +1837,7 @@ module.exports = {
 		22: { // Arun's Tears
 			0: {
 				chargeLevels: [10, 10],
-				autoRelease: 0,
+				//autoRelease: 0,
 				abnormals: {
 					27100: { chargeSpeed: 0.25 }
 				}
