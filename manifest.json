@@ -8,6 +8,7 @@
         "config/silence.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
         "config/skills.js": "655f58e7983eb63ad5dfd7ed12c516e03561db714606bc3190e7791485fe7ecc",
         "config/skills_client.json": "eab99087d6f991687ff95257e234c1e697f3db876e59af8b7525704bc9f68fc3",
+        "config/skills_client_80.json": "50a9f6af9da09527cd53b1023c2a60e2e4c1d0ba57a4407acc4152ba9bbc889b",
         "lib/abnormalities.js": "55c5c56f647d8d53f0bc00640f3b718d36e218592bf7503f9878cd55fa15d66f",
         "lib/commands.js": "bac14ea7e38436670d69a60d3c1d60f593dbc5a2533224ccacf270e07340c4d1",
         "lib/cooldowns.js": "1db5baba6f865f7dd40b4a42942d7c49b71ce948b0e7bb94d9fb6b023f095054",
