@@ -626,7 +626,7 @@ module.exports = {
 					28: 30
 				}
 			},
-			30: { requiredAbnormal: 301604 }
+			30: { requiredBuff: 301604 }
 		},
 		13: { // Stunning Backhand
 			0: true
@@ -1753,7 +1753,6 @@ module.exports = {
 			10: { type: 'lockonCast' }
 		},
 		42: { // Holy Burst
-			"*": { abnormals: { 805800: { disableSkill: true } } },
 			20: true,
 			30: true
 		},
