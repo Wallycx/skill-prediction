@@ -2,8 +2,12 @@ module.exports = {
 	/* Warrior */
 	105100: true, // Aerial Scythe
 
+	/* Lancer */
+
+	201831: true, // Just read the id lmao.
+
 	/* Slayer */
-	//23220: true, // Distant Blade (duration)
+	23220: true, // Distant Blade
 	// Savage Strike
 	301600: true,
 	301601: true,
