@@ -1622,6 +1622,7 @@ module.exports = {
 			0: {
 				noInterrupt: [26, "28-10", "28-11", "28-12", "28-13", 34, 38],
 				moveDir: 1,
+				noInterrupt: [26, 38],
 				forceClip: true,
 				abnormals: {
 					501323: { disableSkill: true }, 
@@ -1724,6 +1725,7 @@ module.exports = {
 		38: { // Backstep
 			0: {
 				moveDir: 1,
+				noInterrupt: [26, 38],
 				forceClip: true,
 				abnormals: {
 					501323: { disableSkill: true }, 
